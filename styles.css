@@ -1,0 +1,182 @@
+/* Reset default styles */
+body, h1, h2, h3, ul, li, p, button, input, form, label {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: white;
+    color: skyblue;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header .logo {
+    height: 100px;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: skyblue;
+    text-decoration: none;
+}
+h2 {
+    color: skyblue;
+    
+}
+header nav ul li a,
+.card a {
+    color: skyblue; /* Change link color to sky blue */
+}
+
+
+.appointment-btn {
+    background-color: skyblue;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.slider {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.slider-card {
+    flex: 0 0 40%;
+    margin: 10px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.slider-card img {
+    max-width: 100%;
+    height: auto;
+    max-height: 200px;
+}
+
+.container {
+    padding: 15px;
+}
+
+.card {
+    margin: 20px;
+    padding: 15px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    max-height: 150px;
+}
+
+#feedback button {
+    background-color: #40d9ff;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#feedback button:hover {
+    background-color: #3399cc;
+}
+
+footer {
+    text-align: center;
+    padding: 5px 0;
+    background-color: skyblue;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.8rem;
+}
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    width: 50%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.modal-content h2 {
+    text-align: center;
+    color: skyblue;
+}
+
+.modal-content label {
+    display: block;
+    margin: 10px 0;
+    color: #333;
+}
+
+.modal-content input[type=text], 
+.modal-content input[type=email], 
+.modal-content input[type=date] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.modal-content input[type=submit] {
+    background-color: skyblue;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.modal-content input[type=submit]:hover {
+    background-color: #3399cc;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .slider-card {
+        flex: 0 0 80%;
+    }
+}
